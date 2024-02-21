@@ -1,14 +1,14 @@
 # created by tools/loadICU.tcl -- do not edit
 namespace eval ::tcl::clock {
-    ::msgcat::mcset de DAYS_OF_WEEK_ABBREV [list \
-        "So"\
-        "Mo"\
-        "Di"\
-        "Mi"\
-        "Do"\
-        "Fr"\
-        "Sa"]
-    ::msgcat::mcset de DAYS_OF_WEEK_FULL [list \
+    ::msgcat::mcset de_BE DAYS_OF_WEEK_ABBREV [list \
+        "Son"\
+        "Mon"\
+        "Die"\
+        "Mit"\
+        "Don"\
+        "Fre"\
+        "Sam"]
+    ::msgcat::mcset de_BE DAYS_OF_WEEK_FULL [list \
         "Sonntag"\
         "Montag"\
         "Dienstag"\
@@ -16,10 +16,10 @@ namespace eval ::tcl::clock {
         "Donnerstag"\
         "Freitag"\
         "Samstag"]
-    ::msgcat::mcset de MONTHS_ABBREV [list \
+    ::msgcat::mcset de_BE MONTHS_ABBREV [list \
         "Jan"\
         "Feb"\
-        "Mrz"\
+        "M\u00e4r"\
         "Apr"\
         "Mai"\
         "Jun"\
@@ -30,7 +30,7 @@ namespace eval ::tcl::clock {
         "Nov"\
         "Dez"\
         ""]
-    ::msgcat::mcset de MONTHS_FULL [list \
+    ::msgcat::mcset de_BE MONTHS_FULL [list \
         "Januar"\
         "Februar"\
         "M\u00e4rz"\
@@ -44,11 +44,10 @@ namespace eval ::tcl::clock {
         "November"\
         "Dezember"\
         ""]
-    ::msgcat::mcset de BCE "v. Chr."
-    ::msgcat::mcset de CE "n. Chr."
-    ::msgcat::mcset de AM "vorm."
-    ::msgcat::mcset de PM "nachm."
-    ::msgcat::mcset de DATE_FORMAT "%d.%m.%Y"
-    ::msgcat::mcset de TIME_FORMAT "%H:%M:%S"
-    ::msgcat::mcset de DATE_TIME_FORMAT "%d.%m.%Y %H:%M:%S %z"
+    ::msgcat::mcset de_BE AM "vorm"
+    ::msgcat::mcset de_BE PM "nachm"
+    ::msgcat::mcset de_BE DATE_FORMAT "%Y-%m-%d"
+    ::msgcat::mcset de_BE TIME_FORMAT "%T"
+    ::msgcat::mcset de_BE TIME_FORMAT_12 "%T"
+    ::msgcat::mcset de_BE DATE_TIME_FORMAT "%a %d %b %Y %T %z"
 }
